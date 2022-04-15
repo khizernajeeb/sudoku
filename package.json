@@ -6,7 +6,7 @@
   "scripts": {
     "launch": "node index",
     "start": "webpack --mode development -w",
-    "build": "webpack --mode production"
+    "build": "npm run build"
   },
   "keywords": [],
   "dependencies": {
