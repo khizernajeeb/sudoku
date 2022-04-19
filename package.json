@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-prebuild": "npm install --dev",
     "launch": "node index",
     "start": "webpack --mode development -w",
     "build": "webpack --mode production"
@@ -18,9 +17,7 @@
     "react-redux": "^7.2.8",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "redux": "^4.1.2"
-  },
-  "devDependencies": {
+    "redux": "^4.1.2",
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
