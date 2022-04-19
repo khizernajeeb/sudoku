@@ -18,10 +18,6 @@ const App = () => {
     board: emptyFillArray(),
   };
 
-  // let [difficulty, setDifficulty] = useState(defaultOptions.difficulty);
-
-  // let [options, setOptions] = useState(defaultOptions);
-
   let [game, setGame] = useState(defaultOptions);
   useEffect(() => {
     fetchBoardState(defaultOptions.difficulty, setGame);
@@ -70,7 +66,6 @@ const App = () => {
       .post(url, formData)
       .then((response) => {
         const { data } = response;
-        // setOptions(data);
         setGame({ ...game, board: data.solution, status: data.status });
       })
       .catch((error) => {
